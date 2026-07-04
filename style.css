@@ -1,0 +1,238 @@
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+section {
+  padding: 50px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d63384;
+}
+
+/* ============================================================
+   MEMBER 2 — Header
+   ============================================================ */
+#site-header {
+  background-color: #ffffff;
+  padding: 18px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+#site-header h1 {
+  color: #d63384;
+  font-size: 1.8rem;
+}
+
+/* ============================================================
+   MEMBER 3 — Navigation Bar
+   ============================================================ */
+#navbar {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#navbar a:hover { color: #d63384; }
+
+/* ============================================================
+   MEMBER 4 — Hero Banner
+   ============================================================ */
+#hero {
+  background: linear-gradient(135deg, #d63384, #6f2dbd);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#hero h1 { font-size: 2.4rem; margin-bottom: 10px; }
+#hero p { font-size: 1.1rem; opacity: 0.9; }
+
+/* ============================================================
+   MEMBER 5 — Categories
+   ============================================================ */
+#categories { background-color: #ffffff; }
+
+#category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  background: #f3e8ff;
+  color: #6f2dbd;
+  padding: 24px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ============================================================
+   MEMBER 6–9 — Product Cards
+   ============================================================ */
+#products { background-color: #fafafa; }
+
+#product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-card img { width: 100%; height: 160px; object-fit: cover; }
+
+.product-card .info { padding: 14px; }
+
+.product-card h3 { font-size: 1rem; margin-bottom: 6px; }
+
+.product-card .price { color: #d63384; font-weight: bold; }
+
+.product-card button {
+  margin-top: 10px;
+  width: 100%;
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ============================================================
+   MEMBER 10 — Promo Banner
+   ============================================================ */
+#promo {
+  background-color: #ffe8f0;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 1020px;
+}
+
+#promo h2 { color: #d63384; }
+
+/* ============================================================
+   MEMBER 11 — Reviews
+   ============================================================ */
+#reviews { background-color: #ffffff; }
+
+blockquote {
+  border-left: 4px solid #d63384;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+blockquote footer {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 6px;
+  color: #d63384;
+  font-size: 0.85rem;
+}
+
+/* ============================================================
+   MEMBER 12 — Newsletter
+   ============================================================ */
+#newsletter {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+#newsletter input {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  width: 240px;
+  outline: none;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+/* ============================================================
+   MEMBER 13 — Cart Icon
+   ============================================================ */
+#cart-icon {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 999;
+}
+
+#cart-icon button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ============================================================
+   MEMBER 14 — Social Links
+   ============================================================ */
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+#social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   MEMBER 15 — Footer
+   ============================================================ */
+#site-footer {
+  background-color: #0d0d0d;
+  color: #ccc;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.85rem;
+}
